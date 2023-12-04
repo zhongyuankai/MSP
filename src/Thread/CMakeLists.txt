@@ -1,0 +1,5 @@
+message(${CMAKE_CURRENT_SOURCE_DIR})
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
+
+file(GLOB_RECURSE CPP_SRC_LIST *.cpp)
+add_library(Thread STATIC ${CPP_SRC_LIST})
